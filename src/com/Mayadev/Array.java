@@ -1,6 +1,6 @@
 package com.Mayadev;
 
-import java.util.ArrayList;
+
 import java.util.Arrays;
 
 public class Array {
@@ -89,17 +89,44 @@ public class Array {
     {
         numbers[index-1] = item;
     }
+    public void max_min(){
+        int n = count;
+        int max = 0;
+        int min = numbers[0];
+        for(int i = 0;i<n;i++)
+        {
+            if(numbers[i] > max)
+            {
+                max = numbers[i];
+            }
+            else if(numbers[i] < min)
+            {
+                min = numbers[i];
+            }
+        }
+        System.out.println(max);
+        System.out.println(min);
+    }
+    public void k_max_min(int k){
+        Arrays.sort(numbers);
+        System.out.println(numbers[k-1]);
+    }
+
     }
 
 
+    //ArrayList grows 50% of it's size
+    //Vectors grows 100% of it's size
+    // But we do not use Vectors because they synchronize the individual operation not the whole vector instance or vector object
+    //This can be dangerous because due to tight coupling or dependencies exist in code.
 
 
 
 
 
-
-
-
+    // Static means that we don't need instance of that class
+    // or in layman terms no object needed to create the object
+    // that class.
 
     //Synatx of an array declaration
 //	int [] numbers = new int[3];

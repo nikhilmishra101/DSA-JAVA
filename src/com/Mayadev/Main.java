@@ -17,7 +17,10 @@ public class Main {
         numbers.reverse();
         //numbers.print();
         numbers.insertAt(55,2);
+        //numbers.max_min();
         //numbers.print();
+        numbers.k_max_min(3);
+        numbers.print();
         //System.out.println(numbers.max());
         //System.out.println(numbers.indexof(10));
         //System.out.println(numbers.indexof(40));
