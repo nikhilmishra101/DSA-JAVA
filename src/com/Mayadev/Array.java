@@ -1,5 +1,6 @@
 package com.Mayadev;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Array {
@@ -60,7 +61,37 @@ public class Array {
         }
         return -1;
     }
+    public int max(){
+        int largest = 0;
+        for(int i=0;i<count;i++)
+        {
+            if(largest < numbers[i])
+            {
+                largest = numbers[i];
+            }
+        }
+        return largest;
     }
+    public int intersect(){
+        System.out.println("hello");
+        return 1;
+    }
+    public void reverse(){
+        int t;
+        for(int i = 0;i<count/2;i++)
+        {
+            t = numbers[i];
+            numbers[i] = numbers[count - i - 1];
+            numbers[count-i-1] = t;
+        }
+    }
+    public void insertAt(int item,int index)
+    {
+        numbers[index-1] = item;
+    }
+    }
+
+
 
 
 
@@ -79,3 +110,20 @@ public class Array {
 //    int [] numbers = {10,20,30};
 //        System.out.println(numbers.length);
                 //System.out.println(Arrays.toString(numbers));
+
+
+
+
+// Dynamic Arrays
+
+    //ArrayList<Integer> list = new ArrayList<>();
+//        list.add(10);
+//        list.add(20);
+//        list.add(30);
+//        list.remove(0);
+//        list.indexOf(20);
+//        list.contains(20);
+//        list.size();
+//        //convert it to regular array
+//        list.toArray();
+//        System.out.println(list);
